@@ -10,13 +10,14 @@
 
 ### Adding exit animations
 
-To give an element an exit animation, use the `animate-in` utility, in combination with some [`fade-in`](/docs/exit-animation-scale.md), [`zoom-in`](/docs/exit-animation-scale.md), and [`slide-in-from`](/docs/exit-animation-translate.md) utilities.
+To give an element an exit animation, use the `animate-out` utility, in combination with some [`fade-out`](/docs/exit-animation-scale.md), [`spin-out`](/docs/exit-animation-rotate.md), [`zoom-out`](/docs/exit-animation-scale.md), and [`slide-out-from`](/docs/exit-animation-translate.md) utilities.
 
 ```html
-<button class="animate-in fade-in ...">Button A</button>
-<button class="animate-in zoom-in ...">Button B</button>
-<button class="animate-in slide-in-from-top ...">Button C</button>
-<button class="animate-in slide-in-from-left ...">Button D</button>
+<button class="animate-out fade-out ...">Button A</button>
+<button class="animate-out spin-out ...">Button B</button>
+<button class="animate-out zoom-out ...">Button C</button>
+<button class="animate-out slide-out-from-top ...">Button D</button>
+<button class="animate-out slide-out-from-left ...">Button E</button>
 ```
 
 ### Adding multiple exit animations
@@ -24,9 +25,9 @@ To give an element an exit animation, use the `animate-in` utility, in combinati
 You can apply multiple exit animations at the same time as long as they apply to different properties.
 
 ```html
-<button class="animate-in fade-in zoom-in ...">Button A</button>
-<button class="animate-in slide-in-from-top slide-in-from-left ...">Button B</button>
-<button class="animate-in fade-in zoom-in slide-in-from-top slide-in-from-left ...">Button C</button>
+<button class="animate-out fade-out zoom-out ...">Button A</button>
+<button class="animate-out slide-out-from-top slide-out-from-left ...">Button B</button>
+<button class="animate-out fade-out zoom-out slide-out-from-top slide-out-from-left ...">Button C</button>
 ```
 
 ## Applying Conditionally
