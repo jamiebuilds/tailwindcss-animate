@@ -11,7 +11,7 @@ module.exports = plugin(
     addUtilities({
       "@keyframes enter": theme("keyframes.enter"),
       "@keyframes exit": theme("keyframes.exit"),
-      ".animate-enter": {
+      ".animate-in": {
         animationName: "enter",
         animationDuration: theme("animationDuration.DEFAULT"),
         "--tw-enter-opacity": "initial",
@@ -19,7 +19,7 @@ module.exports = plugin(
         "--tw-enter-translate-x": "initial",
         "--tw-enter-translate-y": "initial",
       },
-      ".animate-exit": {
+      ".animate-out": {
         animationName: "exit",
         animationDuration: theme("animationDuration.DEFAULT"),
         "--tw-exit-opacity": "initial",
