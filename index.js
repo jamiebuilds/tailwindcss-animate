@@ -16,6 +16,7 @@ module.exports = plugin(
         animationDuration: theme("animationDuration.DEFAULT"),
         "--tw-enter-opacity": "initial",
         "--tw-enter-scale": "initial",
+        "--tw-enter-rotate": "initial",
         "--tw-enter-translate-x": "initial",
         "--tw-enter-translate-y": "initial",
       },
@@ -24,6 +25,7 @@ module.exports = plugin(
         animationDuration: theme("animationDuration.DEFAULT"),
         "--tw-exit-opacity": "initial",
         "--tw-exit-scale": "initial",
+        "--tw-exit-rotate": "initial",
         "--tw-exit-translate-x": "initial",
         "--tw-exit-translate-y": "initial",
       },
@@ -43,6 +45,14 @@ module.exports = plugin(
         "zoom-out": (value) => ({ "--tw-exit-scale": value }),
       },
       { values: theme("animationScale") },
+    )
+
+    matchUtilities(
+      {
+        "spin-in": (value) => ({ "--tw-enter-rotate": value }),
+        "spin-out": (value) => ({ "--tw-exit-rotate": value }),
+      },
+      { values: theme("animationRotate") },
     )
 
     matchUtilities(
@@ -147,6 +157,10 @@ module.exports = plugin(
           DEFAULT: 0,
           ...theme("scale"),
         }),
+        animationRotate: ({ theme }) => ({
+          DEFAULT: 0,
+          ...theme("rotate"),
+        }),
         animationRepeat: {
           0: "0",
           1: "1",
@@ -157,14 +171,14 @@ module.exports = plugin(
             from: {
               opacity: "var(--tw-enter-opacity, 1)",
               transform:
-                "translate3d(var(--tw-enter-translate-x, 0), var(--tw-enter-translate-y, 0), 0) scale3d(var(--tw-enter-scale, 1), var(--tw-enter-scale, 1), var(--tw-enter-scale, 1))",
+                "translate3d(var(--tw-enter-translate-x, 0), var(--tw-enter-translate-y, 0), 0) scale3d(var(--tw-enter-scale, 1), var(--tw-enter-scale, 1), var(--tw-enter-scale, 1)) rotate3d(1, 1, 1, var(--tw-enter-rotate, 0))",
             },
           },
           exit: {
             to: {
               opacity: "var(--tw-exit-opacity, 1)",
               transform:
-                "translate3d(var(--tw-exit-translate-x, 0), var(--tw-exit-translate-y, 0), 0) scale3d(var(--tw-exit-scale, 1), var(--tw-exit-scale, 1), var(--tw-exit-scale, 1))",
+                "translate3d(var(--tw-exit-translate-x, 0), var(--tw-exit-translate-y, 0), 0) scale3d(var(--tw-exit-scale, 1), var(--tw-exit-scale, 1), var(--tw-exit-scale, 1)) rotate3d(1, 1, 1, var(--tw-exit-rotate, 0))",
             },
           },
         },
