@@ -10,13 +10,14 @@
 
 ### Adding enter animations
 
-To give an element an enter animation, use the `animate-in` utility, in combination with some [`fade-in`](/docs/enter-animation-scale.md), [`zoom-in`](/docs/enter-animation-scale.md), and [`slide-in-from`](/docs/enter-animation-translate.md) utilities.
+To give an element an enter animation, use the `animate-in` utility, in combination with some [`fade-in`](/docs/enter-animation-scale.md), [`spin-in`](/docs/enter-animation-rotate.md), [`zoom-in`](/docs/enter-animation-scale.md), and [`slide-in-from`](/docs/enter-animation-translate.md) utilities.
 
 ```html
 <button class="animate-in fade-in ...">Button A</button>
-<button class="animate-in zoom-in ...">Button B</button>
-<button class="animate-in slide-in-from-top ...">Button C</button>
-<button class="animate-in slide-in-from-left ...">Button D</button>
+<button class="animate-in spin-in ...">Button B</button>
+<button class="animate-in zoom-in ...">Button C</button>
+<button class="animate-in slide-in-from-top ...">Button D</button>
+<button class="animate-in slide-in-from-left ...">Button E</button>
 ```
 
 ### Adding multiple enter animations

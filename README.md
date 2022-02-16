@@ -163,26 +163,28 @@ For situations where the user has specified that they prefer reduced motion, you
 
 ### Adding enter animations
 
-To give an element an enter animation, use the `animate-in` utility, in combination with some [`fade-in`](/docs/enter-animation-scale.md), [`zoom-in`](/docs/enter-animation-scale.md), and [`slide-in-from`](/docs/enter-animation-translate.md) utilities.
+To give an element an enter animation, use the `animate-in` utility, in combination with some [`fade-in`](/docs/enter-animation-scale.md), [`spin-in`](/docs/enter-animation-rotate.md), [`zoom-in`](/docs/enter-animation-scale.md), and [`slide-in-from`](/docs/enter-animation-translate.md) utilities.
 
 ```html
 <button class="animate-in fade-in ...">Button A</button>
-<button class="animate-in zoom-in ...">Button B</button>
-<button class="animate-in slide-in-from-top ...">Button C</button>
-<button class="animate-in slide-in-from-left ...">Button D</button>
+<button class="animate-in spin-in ...">Button B</button>
+<button class="animate-in zoom-in ...">Button C</button>
+<button class="animate-in slide-in-from-top ...">Button D</button>
+<button class="animate-in slide-in-from-left ...">Button E</button>
 ```
 
 Learn more in the [enter animation](/docs/enter-animation.md) documentation.
 
 ### Adding exit animations
 
-To give an element an exit animation, use the `animate-in` utility, in combination with some [`fade-in`](/docs/exit-animation-scale.md), [`zoom-in`](/docs/exit-animation-scale.md), and [`slide-in-from`](/docs/exit-animation-translate.md) utilities.
+To give an element an exit animation, use the `animate-out` utility, in combination with some [`fade-out`](/docs/exit-animation-scale.md), [`spin-out`](/docs/exit-animation-rotate.md), [`zoom-out`](/docs/exit-animation-scale.md), and [`slide-out-from`](/docs/exit-animation-translate.md) utilities.
 
 ```html
-<button class="animate-in fade-in ...">Button A</button>
-<button class="animate-in zoom-in ...">Button B</button>
-<button class="animate-in slide-in-from-top ...">Button C</button>
-<button class="animate-in slide-in-from-left ...">Button D</button>
+<button class="animate-out fade-out ...">Button A</button>
+<button class="animate-out spin-out ...">Button B</button>
+<button class="animate-out zoom-out ...">Button C</button>
+<button class="animate-out slide-out-from-top ...">Button D</button>
+<button class="animate-out slide-out-from-left ...">Button E</button>
 ```
 
 Learn more in the [exit animation](/docs/exit-animation.md) documentation.
@@ -199,6 +201,19 @@ Set the starting opacity of an animation using the `fade-in-{amount}` utilities.
 ```
 
 Learn more in the [enter animation opacity](/docs/enter-animation-opacity.md) documentation.
+
+#### Changing enter animation starting rotation
+
+Set the starting rotation of an animation using the `spin-in-{amount}` utilities.
+
+```html
+<button class="animate-in spin-in-1 ...">Button A</button>
+<button class="animate-in spin-in-6 ...">Button B</button>
+<button class="animate-in spin-in-75 ...">Button C</button>
+<button class="animate-in spin-in-90 ...">Button C</button>
+```
+
+Learn more in the [enter animation rotate](/docs/enter-animation-rotate.md) documentation.
 
 #### Changing enter animation starting scale
 
@@ -238,6 +253,19 @@ Set the ending opacity of an animation using the `fade-out-{amount}` utilities.
 ```
 
 Learn more in the [exit animation opacity](/docs/exit-animation-opacity.md) documentation.
+
+#### Changing exit animation ending rotation
+
+Set the ending rotation of an animation using the `spin-out-{amount}` utilities.
+
+```html
+<button class="animate-out spin-out-1 ...">Button A</button>
+<button class="animate-out spin-out-6 ...">Button B</button>
+<button class="animate-out spin-out-75 ...">Button C</button>
+<button class="animate-out spin-out-90 ...">Button C</button>
+```
+
+Learn more in the [exit animation rotate](/docs/exit-animation-rotate.md) documentation.
 
 #### Changing exit animation ending scale
 
