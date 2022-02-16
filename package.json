@@ -1,0 +1,21 @@
+{
+  "name": "tailwindcss-animate",
+  "version": "0.0.0",
+  "description": "A Tailwind CSS plugin for creating beautiful animations.",
+  "main": "index.js",
+  "files": [
+    "index.js"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Jamie Kyle <me@thejameskyle.com>",
+  "license": "MIT",
+  "peerDependencies": {
+    "tailwindcss": ">=3.0.0 || insiders"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.0.22"
+  }
+}
