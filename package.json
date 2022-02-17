@@ -8,7 +8,7 @@
 	],
 	"scripts": {
 		"format": "prettier --write '**'",
-		"format:checl": "prettier --check '**'",
+		"format:check": "prettier --check '**'",
 		"prepare": "husky install"
 	},
 	"keywords": [
