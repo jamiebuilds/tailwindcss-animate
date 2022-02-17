@@ -4,7 +4,7 @@
 
 | Class          | Properties                 |
 | -------------- | -------------------------- |
-| `spin-out`     | `--tw-exit-rotate: 0deg;`  |
+| `spin-out`     | `--tw-exit-rotate: 30deg;` |
 | `spin-out-0`   | `--tw-exit-rotate: 0deg;`  |
 | `spin-out-1`   | `--tw-exit-rotate: 1deg;`  |
 | `spin-out-2`   | `--tw-exit-rotate: 2deg;`  |
@@ -22,20 +22,20 @@
 Set the ending rotation of an animation using the `spin-out-{amount}` utilities.
 
 ```html
-<button class="animate-in spin-out ...">Button A</button>
-<button class="animate-in spin-out-50 ...">Button B</button>
-<button class="animate-in spin-out-75 ...">Button C</button>
-<button class="animate-in spin-out-95 ...">Button C</button>
+<button class="animate-out spin-out ...">Button A</button>
+<button class="animate-out spin-out-12 ...">Button B</button>
+<button class="animate-out spin-out-45 ...">Button C</button>
+<button class="animate-out spin-out-95 ...">Button C</button>
 ```
 
 ## Applying Conditionally
 
 ### Hover, focus, and other states
 
-Tailwind lets you conditionally apply utility classes in different states using variant modifiers. For example, use `hover:spin-out-50` to only apply the `spin-out-50` utility on hover.
+Tailwind lets you conditionally apply utility classes in different states using variant modifiers. For example, use `hover:spin-out-90` to only apply the `spin-out-90` utility on hover.
 
 ```html
-<div class="animate-bounce spin-out-75 hover:spin-out-50">
+<div class="animate-bounce spin-out-45 hover:spin-out-90">
   <!-- ... -->
 </div>
 ```
@@ -44,10 +44,10 @@ For a complete list of all available state modifiers, check out the [Hover, Focu
 
 ### Breakpoints and media queries
 
-You can also use variant modifiers to target media queries like responsive breakpoints, dark mode, prefers-reduced-motion, and more. For example, use `md:spin-out-50` to apply the `spin-out-50` utility at only medium screen sizes and above.
+You can also use variant modifiers to target media queries like responsive breakpoints, dark mode, prefers-reduced-motion, and more. For example, use `md:spin-out-90` to apply the `spin-out-90` utility at only medium screen sizes and above.
 
 ```html
-<div class="animate-bounce spin-out-75 md:spin-out-50">
+<div class="animate-bounce spin-out-45 md:spin-out-90">
   <!-- ... -->
 </div>
 ```
