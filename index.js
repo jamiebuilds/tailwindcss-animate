@@ -1,9 +1,9 @@
 const plugin = require('tailwindcss/plugin')
 
 function filterDefault(values) {
-	return Object.fromEntries(
-		Object.entries(values).filter(([key]) => key !== "DEFAULT"),
-	)
+  return Object.fromEntries(
+    Object.entries(values).filter(([key]) => key !== "DEFAULT"),
+  )
 }
 
 module.exports = plugin(
