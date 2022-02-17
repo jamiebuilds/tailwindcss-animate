@@ -56,9 +56,11 @@ module.exports = {
   - [Adding enter animations](#adding-enter-animations)
   - [Adding exit animations](#adding-exit-animations)
   - [Changing enter animation starting opacity](#changing-enter-animation-starting-opacity)
+  - [Changing enter animation starting rotation](#changing-enter-animation-starting-rotation)
   - [Changing enter animation starting scale](#changing-enter-animation-starting-scale)
   - [Changing enter animation starting translate](#changing-enter-animation-starting-translate)
   - [Changing exit animation ending opacity](#changing-exit-animation-ending-opacity)
+  - [Changing exit animation ending rotation](#changing-exit-animation-ending-rotation)
   - [Changing exit animation ending scale](#changing-exit-animation-ending-scale)
   - [Changing exit animation ending translate](#changing-exit-animation-ending-translate)
 

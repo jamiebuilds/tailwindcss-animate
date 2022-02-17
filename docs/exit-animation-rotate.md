@@ -2,18 +2,18 @@
 
 > Utilities for controlling the ending rotation of exit animations.
 
-| Class          | Properties                 |
-| -------------- | -------------------------- |
-| `spin-out`     | `--tw-exit-rotate: 30deg;` |
-| `spin-out-0`   | `--tw-exit-rotate: 0deg;`  |
-| `spin-out-1`   | `--tw-exit-rotate: 1deg;`  |
-| `spin-out-2`   | `--tw-exit-rotate: 2deg;`  |
-| `spin-out-3`   | `--tw-exit-rotate: 3deg;`  |
-| `spin-out-6`   | `--tw-exit-rotate: 6deg;`  |
-| `spin-out-12`  | `--tw-exit-rotate: 12deg;` |
-| `spin-out-45`  | `--tw-exit-rotate: 45deg;` |
-| `spin-out-90`  | `--tw-exit-rotate: 90deg;` |
-| `spin-out-180` | `--tw-exit-rotate: 180deg;`|
+| Class          | Properties                  |
+| -------------- | --------------------------- |
+| `spin-out`     | `--tw-exit-rotate: 30deg;`  |
+| `spin-out-0`   | `--tw-exit-rotate: 0deg;`   |
+| `spin-out-1`   | `--tw-exit-rotate: 1deg;`   |
+| `spin-out-2`   | `--tw-exit-rotate: 2deg;`   |
+| `spin-out-3`   | `--tw-exit-rotate: 3deg;`   |
+| `spin-out-6`   | `--tw-exit-rotate: 6deg;`   |
+| `spin-out-12`  | `--tw-exit-rotate: 12deg;`  |
+| `spin-out-45`  | `--tw-exit-rotate: 45deg;`  |
+| `spin-out-90`  | `--tw-exit-rotate: 90deg;`  |
+| `spin-out-180` | `--tw-exit-rotate: 180deg;` |
 
 ## Basic Usage
 
