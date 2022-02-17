@@ -35,7 +35,7 @@ Tailwind lets you conditionally apply utility classes in different states using 
 
 ```html
 <div class="animate-bounce duration-300 delay-150 hover:delay-0">
-  <!-- ... -->
+	<!-- ... -->
 </div>
 ```
 
@@ -47,7 +47,7 @@ You can also use variant modifiers to target media queries like responsive break
 
 ```html
 <div class="animate-bounce duration-300 delay-150 md:delay-0">
-  <!-- ... -->
+	<!-- ... -->
 </div>
 ```
 
@@ -62,13 +62,13 @@ By default, Tailwind provides `animation-delay` utilities for all of the built-i
 ```js
 // @filename tailwind.config.js
 module.exports = {
-  theme: {
-    extend: {
-      animationDelay: {
-        '2s': '2s',
-      }
-    }
-  }
+	theme: {
+		extend: {
+			animationDelay: {
+				"2s": "2s",
+			},
+		},
+	},
 }
 ```
 
@@ -80,7 +80,7 @@ If you need to use a one-off `animation-delay` value that doesn’t make sense t
 
 ```html
 <div class="delay-[2s]">
-  <!-- ... -->
+	<!-- ... -->
 </div>
 ```
 

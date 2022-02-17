@@ -29,8 +29,10 @@ Use the `fill-mode-{keyword}` utilities to control an element’s `animation-fil
 Tailwind lets you conditionally apply utility classes in different states using variant modifiers. For example, use `hover:fill-mode-forwards` to only apply the `fill-mode-forwards` utility on hover.
 
 ```html
-<div class="animate-bounce duration-300 fill-mode-backwards hover:fill-mode-forwards">
-  <!-- ... -->
+<div
+	class="animate-bounce duration-300 fill-mode-backwards hover:fill-mode-forwards"
+>
+	<!-- ... -->
 </div>
 ```
 
@@ -41,8 +43,10 @@ For a complete list of all available state modifiers, check out the [Hover, Focu
 You can also use variant modifiers to target media queries like responsive breakpoints, dark mode, prefers-reduced-motion, and more. For example, use `md:fill-mode-forwards` to apply the `fill-mode-forwards` utility at only medium screen sizes and above.
 
 ```html
-<div class="animate-bounce duration-300 fill-mode-backwards md:fill-mode-forwards">
-  <!-- ... -->
+<div
+	class="animate-bounce duration-300 fill-mode-backwards md:fill-mode-forwards"
+>
+	<!-- ... -->
 </div>
 ```
 
@@ -57,13 +61,13 @@ By default, Tailwind provides `animation-direction` utilities for all of the bui
 ```js
 // @filename tailwind.config.js
 module.exports = {
-  theme: {
-    extend: {
-      animationDirection: {
-        'forwards-backwards': 'forwards, backwards',
-      }
-    }
-  }
+	theme: {
+		extend: {
+			animationDirection: {
+				"forwards-backwards": "forwards, backwards",
+			},
+		},
+	},
 }
 ```
 
@@ -75,7 +79,7 @@ If you need to use a one-off `animation-fill-mode` value that doesn’t make sen
 
 ```html
 <div class="fill-mode-[forwards,backwards]">
-  <!-- ... -->
+	<!-- ... -->
 </div>
 ```
 

@@ -2,18 +2,18 @@
 
 > Utilities for controlling the starting rotation of enter animations.
 
-| Class          | Properties                  |
-| -------------- | --------------------------- |
-| `spin-in`      | `--tw-enter-rotate: 30deg;` |
-| `spin-in-0`    | `--tw-enter-rotate: 0deg;`  |
-| `spin-in-1`    | `--tw-enter-rotate: 1deg;`  |
-| `spin-in-2`    | `--tw-enter-rotate: 2deg;`  |
-| `spin-in-3`    | `--tw-enter-rotate: 3deg;`  |
-| `spin-in-6`    | `--tw-enter-rotate: 6deg;`  |
-| `spin-in-12`   | `--tw-enter-rotate: 12deg;` |
-| `spin-in-45`   | `--tw-enter-rotate: 45deg;` |
-| `spin-in-90`   | `--tw-enter-rotate: 90deg;` |
-| `spin-in-180`  | `--tw-enter-rotate: 180deg;`|
+| Class         | Properties                   |
+| ------------- | ---------------------------- |
+| `spin-in`     | `--tw-enter-rotate: 30deg;`  |
+| `spin-in-0`   | `--tw-enter-rotate: 0deg;`   |
+| `spin-in-1`   | `--tw-enter-rotate: 1deg;`   |
+| `spin-in-2`   | `--tw-enter-rotate: 2deg;`   |
+| `spin-in-3`   | `--tw-enter-rotate: 3deg;`   |
+| `spin-in-6`   | `--tw-enter-rotate: 6deg;`   |
+| `spin-in-12`  | `--tw-enter-rotate: 12deg;`  |
+| `spin-in-45`  | `--tw-enter-rotate: 45deg;`  |
+| `spin-in-90`  | `--tw-enter-rotate: 90deg;`  |
+| `spin-in-180` | `--tw-enter-rotate: 180deg;` |
 
 ## Basic Usage
 
@@ -36,7 +36,7 @@ Tailwind lets you conditionally apply utility classes in different states using 
 
 ```html
 <div class="animate-bounce spin-in-45 hover:spin-in-90">
-  <!-- ... -->
+	<!-- ... -->
 </div>
 ```
 
@@ -48,7 +48,7 @@ You can also use variant modifiers to target media queries like responsive break
 
 ```html
 <div class="animate-bounce spin-in-45 md:spin-in-90">
-  <!-- ... -->
+	<!-- ... -->
 </div>
 ```
 
@@ -63,13 +63,13 @@ By default, Tailwind makes the entire default [rotate](https://tailwindcss.com/d
 ```js
 // @filename tailwind.config.js
 module.exports = {
-  theme: {
-    extend: {
-      rotate: {
-        '175': '175deg',
-      }
-    }
-  }
+	theme: {
+		extend: {
+			rotate: {
+				175: "175deg",
+			},
+		},
+	},
 }
 ```
 
@@ -83,7 +83,7 @@ If you need to use a one-off animation rotation value that doesn’t make sense 
 
 ```html
 <div class="spin-in-[175deg]">
-  <!-- ... -->
+	<!-- ... -->
 </div>
 ```
 

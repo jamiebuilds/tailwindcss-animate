@@ -2,8 +2,8 @@
 
 > Utilities for controlling the ending opacity of exit animations.
 
-| Class          | Properties                  |
-| -------------- | --------------------------- |
+| Class          | Properties                 |
+| -------------- | -------------------------- |
 | `fade-out`     | `--tw-exit-opacity: 0;`    |
 | `fade-out-0`   | `--tw-exit-opacity: 0;`    |
 | `fade-out-5`   | `--tw-exit-opacity: 0.05;` |
@@ -42,7 +42,7 @@ Tailwind lets you conditionally apply utility classes in different states using 
 
 ```html
 <div class="animate-bounce fade-out-25 hover:fade-out-50">
-  <!-- ... -->
+	<!-- ... -->
 </div>
 ```
 
@@ -54,7 +54,7 @@ You can also use variant modifiers to target media queries like responsive break
 
 ```html
 <div class="animate-bounce fade-out-25 md:fade-out-50">
-  <!-- ... -->
+	<!-- ... -->
 </div>
 ```
 
@@ -69,13 +69,13 @@ By default, Tailwind makes the entire default [opacity scale](https://tailwindcs
 ```js
 // @filename tailwind.config.js
 module.exports = {
-  theme: {
-    extend: {
-      opacity: {
-        '67': '.67',
-      }
-    }
-  }
+	theme: {
+		extend: {
+			opacity: {
+				67: ".67",
+			},
+		},
+	},
 }
 ```
 
@@ -89,7 +89,7 @@ If you need to use a one-off animation opacity value that doesn’t make sense t
 
 ```html
 <div class="fade-out-[.67]">
-  <!-- ... -->
+	<!-- ... -->
 </div>
 ```
 

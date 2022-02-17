@@ -31,13 +31,13 @@ Then add the plugin to your `tailwind.config.js` file:
 ```js
 // @filename tailwind.config.js
 module.exports = {
-  theme: {
-    // ...
-  },
-  plugins: [
-    require('tailwindcss-animate'),
-    // ...
-  ],
+	theme: {
+		// ...
+	},
+	plugins: [
+		require("tailwindcss-animate"),
+		// ...
+	],
 }
 ```
 
@@ -63,7 +63,6 @@ module.exports = {
   - [Changing exit animation ending rotation](#changing-exit-animation-ending-rotation)
   - [Changing exit animation ending scale](#changing-exit-animation-ending-scale)
   - [Changing exit animation ending translate](#changing-exit-animation-ending-translate)
-
 
 ### Basic Usage
 

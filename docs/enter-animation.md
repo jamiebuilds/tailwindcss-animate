@@ -2,8 +2,8 @@
 
 > Utilities for creating enter animations.
 
-| Class        | Properties             |
-| ------------ | ---------------------- |
+| Class        | Properties                                                                                                                                                                                                 |
+| ------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `animate-in` | `animation-name: enter;`<br>`animation-duration: 150ms;`<br>`--tw-enter-opacity: initial;`<br>`--tw-enter-scale: initial;`<br>`--tw-enter-translate-x: initial;`<br>`--tw-enter-translate-y: initial;`<br> |
 
 ## Basic Usage
@@ -26,8 +26,14 @@ You can apply multiple enter animations at the same time as long as they apply t
 
 ```html
 <button class="animate-in fade-in zoom-in ...">Button A</button>
-<button class="animate-in slide-in-from-top slide-in-from-left ...">Button B</button>
-<button class="animate-in fade-in zoom-in slide-in-from-top slide-in-from-left ...">Button C</button>
+<button class="animate-in slide-in-from-top slide-in-from-left ...">
+	Button B
+</button>
+<button
+	class="animate-in fade-in zoom-in slide-in-from-top slide-in-from-left ..."
+>
+	Button C
+</button>
 ```
 
 ## Applying Conditionally
@@ -38,7 +44,7 @@ Tailwind lets you conditionally apply utility classes in different states using 
 
 ```html
 <div class="hover:animate-in ...">
-  <!-- ... -->
+	<!-- ... -->
 </div>
 ```
 
@@ -50,7 +56,7 @@ You can also use variant modifiers to target media queries like responsive break
 
 ```html
 <div class="md:animate-in ...">
-  <!-- ... -->
+	<!-- ... -->
 </div>
 ```
 

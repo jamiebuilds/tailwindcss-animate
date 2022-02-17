@@ -1,0 +1,15 @@
+name: checks
+on: [push]
+jobs:
+  format:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
+        with:
+          node-version: "14"
+          cache: "npm"
+      - name: npm ci
+        run: npm ci --ignore-scripts
+      - name: npm run format:check
+        run: npm run format:check

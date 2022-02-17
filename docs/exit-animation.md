@@ -2,8 +2,8 @@
 
 > Utilities for creating exit animations.
 
-| Class        | Properties             |
-| ------------ | ---------------------- |
+| Class         | Properties                                                                                                                                                                                            |
+| ------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `animate-out` | `animation-name: exit;`<br>`animation-duration: 150ms;`<br>`--tw-exit-opacity: initial;`<br>`--tw-exit-scale: initial;`<br>`--tw-exit-translate-x: initial;`<br>`--tw-exit-translate-y: initial;`<br> |
 
 ## Basic Usage
@@ -26,8 +26,14 @@ You can apply multiple exit animations at the same time as long as they apply to
 
 ```html
 <button class="animate-out fade-out zoom-out ...">Button A</button>
-<button class="animate-out slide-out-from-top slide-out-from-left ...">Button B</button>
-<button class="animate-out fade-out zoom-out slide-out-from-top slide-out-from-left ...">Button C</button>
+<button class="animate-out slide-out-from-top slide-out-from-left ...">
+	Button B
+</button>
+<button
+	class="animate-out fade-out zoom-out slide-out-from-top slide-out-from-left ..."
+>
+	Button C
+</button>
 ```
 
 ## Applying Conditionally
@@ -38,7 +44,7 @@ Tailwind lets you conditionally apply utility classes in different states using 
 
 ```html
 <div class="hover:animate-out ...">
-  <!-- ... -->
+	<!-- ... -->
 </div>
 ```
 
@@ -50,7 +56,7 @@ You can also use variant modifiers to target media queries like responsive break
 
 ```html
 <div class="md:animate-out ...">
-  <!-- ... -->
+	<!-- ... -->
 </div>
 ```
 

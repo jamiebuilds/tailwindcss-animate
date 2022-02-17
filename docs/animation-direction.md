@@ -30,7 +30,7 @@ Tailwind lets you conditionally apply utility classes in different states using 
 
 ```html
 <div class="animate-bounce duration-300 delay-150 hover:direction-normal">
-  <!-- ... -->
+	<!-- ... -->
 </div>
 ```
 
@@ -42,7 +42,7 @@ You can also use variant modifiers to target media queries like responsive break
 
 ```html
 <div class="animate-bounce duration-300 delay-150 md:direction-normal">
-  <!-- ... -->
+	<!-- ... -->
 </div>
 ```
 
@@ -57,13 +57,13 @@ By default, Tailwind provides `animation-direction` utilities for all of the bui
 ```js
 // @filename tailwind.config.js
 module.exports = {
-  theme: {
-    extend: {
-      animationDirection: {
-        'normal-reverse': 'normal, reverse',
-      }
-    }
-  }
+	theme: {
+		extend: {
+			animationDirection: {
+				"normal-reverse": "normal, reverse",
+			},
+		},
+	},
 }
 ```
 
@@ -75,7 +75,7 @@ If you need to use a one-off `animation-direction` value that doesn’t make sen
 
 ```html
 <div class="direction-[normal,reverse]">
-  <!-- ... -->
+	<!-- ... -->
 </div>
 ```
 

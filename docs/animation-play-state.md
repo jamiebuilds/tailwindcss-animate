@@ -26,7 +26,7 @@ Tailwind lets you conditionally apply utility classes in different states using 
 
 ```html
 <div class="animate-bounce paused hover:running">
-  <!-- ... -->
+	<!-- ... -->
 </div>
 ```
 
@@ -38,7 +38,7 @@ You can also use variant modifiers to target media queries like responsive break
 
 ```html
 <div class="animate-bounce paused md:running">
-  <!-- ... -->
+	<!-- ... -->
 </div>
 ```
 

@@ -2,8 +2,8 @@
 
 > Utilities for controlling the ending scale of exit animations.
 
-| Class          | Properties                |
-| -------------- | ------------------------- |
+| Class          | Properties               |
+| -------------- | ------------------------ |
 | `zoom-out`     | `--tw-exit-scale: 0;`    |
 | `zoom-out-0`   | `--tw-exit-scale: 0;`    |
 | `zoom-out-50`  | `--tw-exit-scale: .5;`   |
@@ -36,7 +36,7 @@ Tailwind lets you conditionally apply utility classes in different states using 
 
 ```html
 <div class="animate-bounce zoom-out-75 hover:zoom-out-50">
-  <!-- ... -->
+	<!-- ... -->
 </div>
 ```
 
@@ -48,7 +48,7 @@ You can also use variant modifiers to target media queries like responsive break
 
 ```html
 <div class="animate-bounce zoom-out-75 md:zoom-out-50">
-  <!-- ... -->
+	<!-- ... -->
 </div>
 ```
 
@@ -63,13 +63,13 @@ By default, Tailwind makes the entire default [scale](https://tailwindcss.com/do
 ```js
 // @filename tailwind.config.js
 module.exports = {
-  theme: {
-    extend: {
-      scale: {
-        '175': '1.75',
-      }
-    }
-  }
+	theme: {
+		extend: {
+			scale: {
+				175: "1.75",
+			},
+		},
+	},
 }
 ```
 
@@ -83,7 +83,7 @@ If you need to use a one-off animation scale value that doesn’t make sense to 
 
 ```html
 <div class="zoom-out-[1.75]">
-  <!-- ... -->
+	<!-- ... -->
 </div>
 ```
 

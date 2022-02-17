@@ -32,7 +32,7 @@ Tailwind lets you conditionally apply utility classes in different states using 
 
 ```html
 <div class="animate-bounce ease-linear hover:ease-in-out">
-  <!-- ... -->
+	<!-- ... -->
 </div>
 ```
 
@@ -44,7 +44,7 @@ You can also use variant modifiers to target media queries like responsive break
 
 ```html
 <div class="animate-bounce ease-linear md:ease-in-out">
-  <!-- ... -->
+	<!-- ... -->
 </div>
 ```
 
@@ -59,14 +59,14 @@ By default, Tailwind provides four general purpose `animation-timing-function` u
 ```js
 // @filename tailwind.config.js
 module.exports = {
-  theme: {
-    extend: {
-      animationTimingFunction: {
-        'in-expo': 'cubic-bezier(0.95, 0.05, 0.795, 0.035)',
-        'out-expo': 'cubic-bezier(0.19, 1, 0.22, 1)',
-      }
-    }
-  }
+	theme: {
+		extend: {
+			animationTimingFunction: {
+				"in-expo": "cubic-bezier(0.95, 0.05, 0.795, 0.035)",
+				"out-expo": "cubic-bezier(0.19, 1, 0.22, 1)",
+			},
+		},
+	},
 }
 ```
 
@@ -80,7 +80,7 @@ If you need to use a one-off `animation-timing-function` value that doesn’t ma
 
 ```html
 <div class="ease-[cubic-bezier(0.95,0.05,0.795,0.035)]">
-  <!-- ... -->
+	<!-- ... -->
 </div>
 ```
 
