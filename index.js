@@ -158,7 +158,7 @@ module.exports = plugin(
           ...theme("scale"),
         }),
         animationRotate: ({ theme }) => ({
-          DEFAULT: 0,
+          DEFAULT: "30deg",
           ...theme("rotate"),
         }),
         animationRepeat: {

@@ -2,18 +2,18 @@
 
 > Utilities for controlling the starting rotation of enter animations.
 
-| Class          | Properties                 |
-| -------------- | -------------------------- |
-| `spin-in`     | `--tw-exit-rotate: 0deg;`  |
-| `spin-in-0`   | `--tw-exit-rotate: 0deg;`  |
-| `spin-in-1`   | `--tw-exit-rotate: 1deg;`  |
-| `spin-in-2`   | `--tw-exit-rotate: 2deg;`  |
-| `spin-in-3`   | `--tw-exit-rotate: 3deg;`  |
-| `spin-in-6`   | `--tw-exit-rotate: 6deg;`  |
-| `spin-in-12`  | `--tw-exit-rotate: 12deg;` |
-| `spin-in-45`  | `--tw-exit-rotate: 45deg;` |
-| `spin-in-90`  | `--tw-exit-rotate: 90deg;` |
-| `spin-in-180` | `--tw-exit-rotate: 180deg;`|
+| Class          | Properties                  |
+| -------------- | --------------------------- |
+| `spin-in`      | `--tw-enter-rotate: 30deg;` |
+| `spin-in-0`    | `--tw-enter-rotate: 0deg;`  |
+| `spin-in-1`    | `--tw-enter-rotate: 1deg;`  |
+| `spin-in-2`    | `--tw-enter-rotate: 2deg;`  |
+| `spin-in-3`    | `--tw-enter-rotate: 3deg;`  |
+| `spin-in-6`    | `--tw-enter-rotate: 6deg;`  |
+| `spin-in-12`   | `--tw-enter-rotate: 12deg;` |
+| `spin-in-45`   | `--tw-enter-rotate: 45deg;` |
+| `spin-in-90`   | `--tw-enter-rotate: 90deg;` |
+| `spin-in-180`  | `--tw-enter-rotate: 180deg;`|
 
 ## Basic Usage
 
@@ -23,19 +23,19 @@ Set the ending rotation of an animation using the `spin-in-{amount}` utilities.
 
 ```html
 <button class="animate-in spin-in ...">Button A</button>
-<button class="animate-in spin-in-50 ...">Button B</button>
-<button class="animate-in spin-in-75 ...">Button C</button>
-<button class="animate-in spin-in-95 ...">Button C</button>
+<button class="animate-in spin-in-12 ...">Button B</button>
+<button class="animate-in spin-in-45 ...">Button C</button>
+<button class="animate-in spin-in-90 ...">Button C</button>
 ```
 
 ## Applying Conditionally
 
 ### Hover, focus, and other states
 
-Tailwind lets you conditionally apply utility classes in different states using variant modifiers. For example, use `hover:spin-in-50` to only apply the `spin-in-50` utility on hover.
+Tailwind lets you conditionally apply utility classes in different states using variant modifiers. For example, use `hover:spin-in-90` to only apply the `spin-in-90` utility on hover.
 
 ```html
-<div class="animate-bounce spin-in-75 hover:spin-in-50">
+<div class="animate-bounce spin-in-45 hover:spin-in-90">
   <!-- ... -->
 </div>
 ```
@@ -44,10 +44,10 @@ For a complete list of all available state modifiers, check out the [Hover, Focu
 
 ### Breakpoints and media queries
 
-You can also use variant modifiers to target media queries like responsive breakpoints, dark mode, prefers-reduced-motion, and more. For example, use `md:spin-in-50` to apply the `spin-in-50` utility at only medium screen sizes and above.
+You can also use variant modifiers to target media queries like responsive breakpoints, dark mode, prefers-reduced-motion, and more. For example, use `md:spin-in-90` to apply the `spin-in-90` utility at only medium screen sizes and above.
 
 ```html
-<div class="animate-bounce spin-in-75 md:spin-in-50">
+<div class="animate-bounce spin-in-45 md:spin-in-90">
   <!-- ... -->
 </div>
 ```
