@@ -1,6 +1,6 @@
 {
   "name": "tailwindcss-animate",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "A Tailwind CSS plugin for creating beautiful animations.",
   "main": "index.js",
   "files": [
