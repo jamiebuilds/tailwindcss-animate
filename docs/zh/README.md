@@ -1,6 +1,6 @@
 # `tailwindcss-animate`
 
-> A Tailwind CSS plugin for creating beautiful animations.
+> 一个用于构建精美动画的Tailwind CSS插件
 
 ```html
 <!-- Add an animated fade and zoom entrance -->
