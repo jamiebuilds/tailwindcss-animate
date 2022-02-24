@@ -3,22 +3,22 @@
 > 一个用于构建精美动画的Tailwind CSS插件
 
 ```html
-<!-- Add an animated fade and zoom entrance -->
+<！-- 添加淡入淡出和缩放出现效果的动画——>
 <div class="animate-in fade-in zoom-in">...</div>
 
-<!-- Add an animated slide to top-left exit -->
+<!-- 添加滑向左上方退出的动画-->
 <div class="animate-out slide-out-to-top slide-out-to-left">...</div>
 
-<!-- Control animation duration -->
+<!-- 控制动画持续时间 -->
 <div class="... duration-300">...</div>
 
-<!-- Control animation delay -->
-<div class="... delay-150">...</div>
+<!-- 控制动画延迟 -->
+<div class="... delay-150">. 。</div>
 
-<!-- And so much more! -->
+<!-- 更多其他动画效果！ -->
 ```
 
-## Installation
+## 安装
 
 Install the plugin from npm:
 
@@ -26,7 +26,7 @@ Install the plugin from npm:
 npm install -D tailwindcss-animate
 ```
 
-Then add the plugin to your `tailwind.config.js` file:
+之后将插件添加到您的 `tailwind.config.js` 文件：
 
 ```js
 // @filename tailwind.config.js
@@ -41,34 +41,34 @@ module.exports = {
 }
 ```
 
-## Documentation
+## 文档
 
-- [Basic Usage](#basic-usage)
-  - [Changing animation delay](#changing-animation-delay)
-  - [Changing animation direction](#changing-animation-direction)
-  - [Changing animation duration](#changing-animation-duration)
-  - [Changing animation fill mode](#changing-animation-fill-mode)
-  - [Changing animation iteration count](#changing-animation-iteration-count)
-  - [Changing animation play state](#changing-animation-play-state)
-  - [Changing animation timing function](#changing-animation-timing-function)
-  - [Prefers-reduced-motion](#prefers-reduced-motion)
-- [Enter & Exit Animations](#enter-and-exit-animations)
-  - [Adding enter animations](#adding-enter-animations)
-  - [Adding exit animations](#adding-exit-animations)
-  - [Changing enter animation starting opacity](#changing-enter-animation-starting-opacity)
-  - [Changing enter animation starting rotation](#changing-enter-animation-starting-rotation)
-  - [Changing enter animation starting scale](#changing-enter-animation-starting-scale)
-  - [Changing enter animation starting translate](#changing-enter-animation-starting-translate)
-  - [Changing exit animation ending opacity](#changing-exit-animation-ending-opacity)
-  - [Changing exit animation ending rotation](#changing-exit-animation-ending-rotation)
-  - [Changing exit animation ending scale](#changing-exit-animation-ending-scale)
-  - [Changing exit animation ending translate](#changing-exit-animation-ending-translate)
+- [基本用法](#basic-usage)
+  - [更改动画延迟](#changing-animation-delay)
+  - [更改动画方向](#changing-animation-direction)
+  - [更改动画持续时间](#changing-animation-duration)
+  - [更改动画填充模式](#changing-animation-fill-mode)
+  - [更改动画重复次数](#changing-animation-iteration-count)
+  - [更改动画播放状态](#changing-animation-play-state)
+  - [更改动画时序方式](#changing-animation-timing-function)
+  - [减少动效](#prefers-reduced-motion)
+- [进入以及推出动画](#enter-and-exit-animations)
+  - [添加进入动画](#adding-enter-animations)
+  - [添加退出动画](#adding-exit-animations)
+  - [更改进入动画时的不透明度](#changing-enter-animation-starting-opacity)
+  - [更改进入动画时的旋转](#changing-enter-animation-starting-rotation)
+  - [更改进入动画时的缩放](#changing-enter-animation-starting-scale)
+  - [更改进入动画时的变换](#changing-enter-animation-starting-translate)
+  - [更改退出动画时的不透明度](#changing-exit-animation-ending-opacity)
+  - [更改退出动画时的旋转](#changing-exit-animation-ending-rotation)
+  - [更改退出动画时的缩放](#changing-exit-animation-ending-scale)
+  - [更改退出动画时的变换](#changing-exit-animation-ending-translate)
 
-### Basic Usage
+### 基本用法
 
-#### Changing animation delay
+#### 更改动画延迟
 
-Use the `delay-{amount}` utilities to control an element’s `animation-delay`.
+使用 `delay-{amount}` 标签控制元素的 `animation-delay`.
 
 ```html
 <button class="animate-bounce delay-150 duration-300 ...">Button A</button>
@@ -76,9 +76,9 @@ Use the `delay-{amount}` utilities to control an element’s `animation-delay`.
 <button class="animate-bounce delay-700 duration-300 ...">Button C</button>
 ```
 
-Learn more in the [animation delay](/docs/animation-delay.md) documentation.
+查看更多与 [animation delay](/docs/animation-delay.md) 相关的文档
 
-#### Changing animation direction
+#### 更改动画方向
 
 Use the `direction-{keyword}` utilities to control an element’s `animation-delay`.
 
