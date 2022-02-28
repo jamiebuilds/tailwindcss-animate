@@ -4,4 +4,4 @@ LICENSE
 *.sh
 
 # dont format translations
-/docs/*/*.md
+/docs/{zh}/**
