@@ -80,7 +80,7 @@ module.exports = {
 
 #### 更改动画方向
 
-Use the `direction-{keyword}` utilities to control an element’s `animation-delay`.
+使用 `direction-{keyword}` 标签控制元素的`animation-delay`.
 
 ```html
 <button class="animate-bounce direction-normal ...">Button A</button>
@@ -89,9 +89,9 @@ Use the `direction-{keyword}` utilities to control an element’s `animation-del
 <button class="animate-bounce direction-alternate-reverse ...">Button C</button>
 ```
 
-Learn more in the [animation direction](/docs/animation-direction.md) documentation.
+查看更多[animation direction](/docs/animation-direction.md)相关的文档
 
-#### Changing animation duration
+#### 更改动画持续时间
 
 Use the `duration-{amount}` utilities to control an element’s `animation-duration`.
 
