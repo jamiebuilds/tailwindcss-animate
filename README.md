@@ -235,9 +235,9 @@ Set the starting translate of an animation using the `slide-in-from-{direction}-
 
 ```html
 <button class="animate-in slide-in-from-top ...">Button A</button>
-<button class="animate-in slide-in-from-bottom-50 ...">Button B</button>
-<button class="animate-in slide-in-from-left-75 ...">Button C</button>
-<button class="animate-in slide-in-from-right-95 ...">Button C</button>
+<button class="animate-in slide-in-from-bottom-48 ...">Button B</button>
+<button class="animate-in slide-in-from-left-72 ...">Button C</button>
+<button class="animate-in slide-in-from-right-96 ...">Button C</button>
 ```
 
 Learn more in the [enter animation translate](/docs/enter-animation-translate.md) documentation.
@@ -287,9 +287,9 @@ Set the ending translate of an animation using the `slide-out-to-{direction}-{am
 
 ```html
 <button class="animate-out slide-out-to-top ...">Button A</button>
-<button class="animate-out slide-out-to-bottom-50 ...">Button B</button>
-<button class="animate-out slide-out-to-left-75 ...">Button C</button>
-<button class="animate-out slide-out-to-right-95 ...">Button C</button>
+<button class="animate-out slide-out-to-bottom-48 ...">Button B</button>
+<button class="animate-out slide-out-to-left-72 ...">Button C</button>
+<button class="animate-out slide-out-to-right-96 ...">Button C</button>
 ```
 
 Learn more in the [exit animation translate](/docs/exit-animation-translate.md) documentation.
