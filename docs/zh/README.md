@@ -93,7 +93,7 @@ module.exports = {
 
 #### 更改动画持续时间
 
-Use the `duration-{amount}` utilities to control an element’s `animation-duration`.
+使用 `delay-{amount}` 标签控制元素的 `animation-delay`.
 
 ```html
 <button class="animate-bounce duration-150 ...">Button A</button>
@@ -101,7 +101,7 @@ Use the `duration-{amount}` utilities to control an element’s `animation-durat
 <button class="animate-bounce duration-700 ...">Button C</button>
 ```
 
-Learn more in the [animation duration](/docs/animation-duration.md) documentation.
+查看更多[animation direction](/docs/animation-direction.md)相关的文档
 
 #### Changing animation fill mode
 
