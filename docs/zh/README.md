@@ -103,9 +103,9 @@ module.exports = {
 
 查看更多[animation direction](/docs/animation-direction.md)相关的文档
 
-#### Changing animation fill mode
+#### 更改动画不播放时要应用到元素的样式（animation-fill-mode）
 
-Use the `fill-mode-{keyword}` utilities to control an element’s `animation-fill-mode`.
+使用 `direction-{keyword}` 标签控制元素的`animation-delay`.
 
 ```html
 <button class="animate-bounce fill-mode-none ...">Button A</button>
@@ -114,11 +114,11 @@ Use the `fill-mode-{keyword}` utilities to control an element’s `animation-fil
 <button class="animate-bounce fill-mode-both ...">Button C</button>
 ```
 
-Learn more in the [animation fill mode](/docs/animation-fill-mode.md) documentation.
+查看更多[animation direction](/docs/animation-direction.md)相关的文档
 
-#### Changing animation iteration count
+#### 更改动画重复次数
 
-Use the `repeat-{amount}` utilities to control an element’s `animation-iteration-count`.
+使用 `delay-{amount}` 标签控制元素的 `animation-delay`.
 
 ```html
 <button class="animate-bounce repeat-0 ...">Button A</button>
@@ -126,22 +126,22 @@ Use the `repeat-{amount}` utilities to control an element’s `animation-iterati
 <button class="animate-bounce repeat-infinite ...">Button C</button>
 ```
 
-Learn more in the [animation iteration count](/docs/animation-iteration-count.md) documentation.
+查看更多[animation direction](/docs/animation-direction.md)相关的文档
 
-#### Changing animation play state
+#### 更改动画播放状态
 
-Use the `running` and `paused` utilities to control an element’s `animation-play-state`.
+使用 `direction-{keyword}` 标签控制元素的`animation-delay`.
 
 ```html
 <button class="animate-bounce running ...">Button B</button>
 <button class="animate-bounce paused ...">Button A</button>
 ```
 
-Learn more in the [animation play state](/docs/animation-play-state.md) documentation.
+查看更多[animation direction](/docs/animation-direction.md)相关的文档
 
-#### Changing animation timing function
+#### 更改动画速度曲线
 
-Use the `ease-{keyword}` utilities to control an element’s `animation-timing-function`.
+使用 `direction-{keyword}` 标签控制元素的`animation-delay`.
 
 ```html
 <button class="animate-bounce ease-linear ...">Button A</button>
@@ -150,19 +150,19 @@ Use the `ease-{keyword}` utilities to control an element’s `animation-timing-f
 <button class="animate-bounce ease-in-out ...">Button C</button>
 ```
 
-Learn more in the [animation timing function](/docs/animation-timing-function.md) documentation.
+查看更多[animation direction](/docs/animation-direction.md)相关的文档
 
-#### Prefers-reduced-motion
+#### 减少运动媒体查询
 
-For situations where the user has specified that they prefer reduced motion, you can conditionally apply animations and transitions using the `motion-safe` and `motion-reduce` variants:
+如果用户指定他们喜欢减少动作， 您可以使用 `motion-safe` 和 `motion-reduc` 变量来有条件地应用动画和过渡：
 
 ```html
 <button class="motion-safe:animate-bounce ...">Button B</button>
 ```
 
-### Enter & Exit Animations
+### 进入以及退出动画
 
-### Adding enter animations
+### 添加进入动画
 
 To give an element an enter animation, use the `animate-in` utility, in combination with some [`fade-in`](/docs/enter-animation-scale.md), [`spin-in`](/docs/enter-animation-rotate.md), [`zoom-in`](/docs/enter-animation-scale.md), and [`slide-in-from`](/docs/enter-animation-translate.md) utilities.
 
