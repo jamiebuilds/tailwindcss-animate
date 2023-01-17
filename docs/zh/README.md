@@ -164,7 +164,7 @@ module.exports = {
 
 ### 添加进入动画
 
-To give an element an enter animation, use the `animate-in` utility, in combination with some [`fade-in`](/docs/enter-animation-scale.md), [`spin-in`](/docs/enter-animation-rotate.md), [`zoom-in`](/docs/enter-animation-scale.md), and [`slide-in-from`](/docs/enter-animation-translate.md) utilities.
+要给元素定义进入动画，请使用 `animate-in` ，并结合一些 [`fade-in`](/docs/enter-animation-scale.md), [`spin-in`](/docs/enter-animation-rotate.md) [`zoom-in`](/docs/enter-animation-scale.md), 和 [`slide-in-from`](/docs/enter-animation-translate.md)
 
 ```html
 <button class="animate-in fade-in ...">Button A</button>
