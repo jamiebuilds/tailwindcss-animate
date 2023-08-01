@@ -1,4 +1,4 @@
-# Animation Direction
+# Timing Function
 
 > Utilities for controlling the timing function of CSS animations.
 
