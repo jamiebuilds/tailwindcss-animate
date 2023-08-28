@@ -4,7 +4,8 @@
 	"description": "A Tailwind CSS plugin for creating beautiful animations.",
 	"main": "index.js",
 	"files": [
-		"index.js"
+		"index.js",
+		"index.d.ts"
 	],
 	"scripts": {
 		"format": "prettier --write '**'",
