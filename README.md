@@ -80,7 +80,7 @@ Learn more in the [animation delay](/docs/animation-delay.md) documentation.
 
 #### Changing animation direction
 
-Use the `direction-{keyword}` utilities to control an element’s `animation-delay`.
+Use the `direction-{keyword}` utilities to control an element’s `animation-direction`.
 
 ```html
 <button class="animate-bounce direction-normal ...">Button A</button>
