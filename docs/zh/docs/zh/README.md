@@ -80,7 +80,7 @@ module.exports = {
 
 #### 更改动画方向
 
-使用 `direction-{keyword}` 标签控制元素的`animation-delay`.
+Use the `direction-{keyword}` utilities to control an element’s `animation-delay`.
 
 ```html
 <button class="animate-bounce direction-normal ...">Button A</button>
@@ -89,11 +89,11 @@ module.exports = {
 <button class="animate-bounce direction-alternate-reverse ...">Button C</button>
 ```
 
-查看更多与 [animation direction](/docs/animation-direction.md) 相关的文档
+Learn more in the [animation direction](/docs/animation-direction.md) documentation.
 
-#### 更改动画持续时间
+#### Changing animation duration
 
-使用 `delay-{amount}` 标签控制元素的 `animation-delay`.
+Use the `duration-{amount}` utilities to control an element’s `animation-duration`.
 
 ```html
 <button class="animate-bounce duration-150 ...">Button A</button>
@@ -103,9 +103,9 @@ module.exports = {
 
 Learn more in the [animation duration](/docs/animation-duration.md) documentation.
 
-#### 更改动画不播放时要应用到元素的样式（animation-fill-mode）
+#### Changing animation fill mode
 
-使用 `direction-{keyword}` 标签控制元素的`animation-delay`.
+Use the `fill-mode-{keyword}` utilities to control an element’s `animation-fill-mode`.
 
 ```html
 <button class="animate-bounce fill-mode-none ...">Button A</button>
@@ -114,11 +114,11 @@ Learn more in the [animation duration](/docs/animation-duration.md) documentatio
 <button class="animate-bounce fill-mode-both ...">Button C</button>
 ```
 
-查看更多与 [animation fill mode](/docs/animation-fill-mode.md) 相关的文档
+Learn more in the [animation fill mode](/docs/animation-fill-mode.md) documentation.
 
-#### 更改动画重复次数
+#### Changing animation iteration count
 
-使用 `delay-{amount}` 标签控制元素的 `animation-delay`.
+Use the `repeat-{amount}` utilities to control an element’s `animation-iteration-count`.
 
 ```html
 <button class="animate-bounce repeat-0 ...">Button A</button>
@@ -128,9 +128,9 @@ Learn more in the [animation duration](/docs/animation-duration.md) documentatio
 
 Learn more in the [animation iteration count](/docs/animation-iteration-count.md) documentation.
 
-#### 更改动画播放状态
+#### Changing animation play state
 
-使用 `direction-{keyword}` 标签控制元素的`animation-delay`.
+Use the `running` and `paused` utilities to control an element’s `animation-play-state`.
 
 ```html
 <button class="animate-bounce running ...">Button B</button>
@@ -139,9 +139,9 @@ Learn more in the [animation iteration count](/docs/animation-iteration-count.md
 
 Learn more in the [animation play state](/docs/animation-play-state.md) documentation.
 
-#### 更改动画速度曲线
+#### Changing animation timing function
 
-使用 `direction-{keyword}` 标签控制元素的`animation-delay`.
+Use the `ease-{keyword}` utilities to control an element’s `animation-timing-function`.
 
 ```html
 <button class="animate-bounce ease-linear ...">Button A</button>
@@ -152,19 +152,19 @@ Learn more in the [animation play state](/docs/animation-play-state.md) document
 
 Learn more in the [animation timing function](/docs/animation-timing-function.md) documentation.
 
-#### 减少运动媒体查询
+#### Prefers-reduced-motion
 
-如果用户指定他们喜欢减少动作， 您可以使用 `motion-safe` 和 `motion-reduc` 变量来有条件地应用动画和过渡：
+For situations where the user has specified that they prefer reduced motion, you can conditionally apply animations and transitions using the `motion-safe` and `motion-reduce` variants:
 
 ```html
 <button class="motion-safe:animate-bounce ...">Button B</button>
 ```
 
-### 进入以及退出动画
+### Enter & Exit Animations
 
-### 添加进入动画
+### Adding enter animations
 
-要给元素定义进入动画，请使用 `animate-in` ，并结合一些 [`fade-in`](/docs/enter-animation-scale.md), [`spin-in`](/docs/enter-animation-rotate.md) [`zoom-in`](/docs/enter-animation-scale.md), 和 [`slide-in-from`](/docs/enter-animation-translate.md)
+To give an element an enter animation, use the `animate-in` utility, in combination with some [`fade-in`](/docs/enter-animation-scale.md), [`spin-in`](/docs/enter-animation-rotate.md), [`zoom-in`](/docs/enter-animation-scale.md), and [`slide-in-from`](/docs/enter-animation-translate.md) utilities.
 
 ```html
 <button class="animate-in fade-in ...">Button A</button>
@@ -176,9 +176,9 @@ Learn more in the [animation timing function](/docs/animation-timing-function.md
 
 Learn more in the [enter animation](/docs/enter-animation.md) documentation.
 
-### 添加退出动画
+### Adding exit animations
 
-要给元素定义进入动画，请使用 `animate-in` ，并结合一些 [`fade-in`](/docs/enter-animation-scale.md), [`spin-in`](/docs/enter-animation-rotate.md) [`zoom-in`](/docs/enter-animation-scale.md), 和 [`slide-in-from`](/docs/enter-animation-translate.md)
+To give an element an exit animation, use the `animate-out` utility, in combination with some [`fade-out`](/docs/exit-animation-scale.md), [`spin-out`](/docs/exit-animation-rotate.md), [`zoom-out`](/docs/exit-animation-scale.md), and [`slide-out-from`](/docs/exit-animation-translate.md) utilities.
 
 ```html
 <button class="animate-out fade-out ...">Button A</button>
@@ -190,9 +190,9 @@ Learn more in the [enter animation](/docs/enter-animation.md) documentation.
 
 Learn more in the [exit animation](/docs/exit-animation.md) documentation.
 
-#### 更改进入动画时的不透明度
+#### Changing enter animation starting opacity
 
-使用 `fade-in-{amount}` 设置动画的初始不透明度
+Set the starting opacity of an animation using the `fade-in-{amount}` utilities.
 
 ```html
 <button class="animate-in fade-in ...">Button A</button>
@@ -203,7 +203,7 @@ Learn more in the [exit animation](/docs/exit-animation.md) documentation.
 
 Learn more in the [enter animation opacity](/docs/enter-animation-opacity.md) documentation.
 
-#### 更改进入动画时的旋转角度
+#### Changing enter animation starting rotation
 
 Set the starting rotation of an animation using the `spin-in-{amount}` utilities.
 
@@ -216,7 +216,7 @@ Set the starting rotation of an animation using the `spin-in-{amount}` utilities
 
 Learn more in the [enter animation rotate](/docs/enter-animation-rotate.md) documentation.
 
-#### 更改进入动画时的缩放
+#### Changing enter animation starting scale
 
 Set the starting scale of an animation using the `zoom-in-{amount}` utilities.
 
@@ -229,22 +229,22 @@ Set the starting scale of an animation using the `zoom-in-{amount}` utilities.
 
 Learn more in the [enter animation scale](/docs/enter-animation-scale.md) documentation.
 
-#### 更改进入动画时的位移
+#### Changing enter animation starting translate
 
-使用 `slide-in-from-{direction}-{amount}` 设置动画开始的位移
+Set the starting translate of an animation using the `slide-in-from-{direction}-{amount}` utilities.
 
 ```html
 <button class="animate-in slide-in-from-top ...">Button A</button>
-<button class="animate-in slide-in-from-bottom-48 ...">Button B</button>
-<button class="animate-in slide-in-from-left-72 ...">Button C</button>
-<button class="animate-in slide-in-from-right-96 ...">Button C</button>
+<button class="animate-in slide-in-from-bottom-50 ...">Button B</button>
+<button class="animate-in slide-in-from-left-75 ...">Button C</button>
+<button class="animate-in slide-in-from-right-95 ...">Button C</button>
 ```
 
 Learn more in the [enter animation translate](/docs/enter-animation-translate.md) documentation.
 
-#### 更改退出动画时的不透明度
+#### Changing exit animation ending opacity
 
-使用 `fade-out-{amount}` 设置动画结束时的不透明度
+Set the ending opacity of an animation using the `fade-out-{amount}` utilities.
 
 ```html
 <button class="animate-out fade-out ...">Button A</button>
@@ -255,9 +255,9 @@ Learn more in the [enter animation translate](/docs/enter-animation-translate.md
 
 Learn more in the [exit animation opacity](/docs/exit-animation-opacity.md) documentation.
 
-#### 更改退出动画时的旋转
+#### Changing exit animation ending rotation
 
-使用 `spin-out-{amount}`设置动画结束时的旋转角度
+Set the ending rotation of an animation using the `spin-out-{amount}` utilities.
 
 ```html
 <button class="animate-out spin-out-1 ...">Button A</button>
@@ -268,9 +268,9 @@ Learn more in the [exit animation opacity](/docs/exit-animation-opacity.md) docu
 
 Learn more in the [exit animation rotate](/docs/exit-animation-rotate.md) documentation.
 
-#### 更改退出动画时的缩放
+#### Changing exit animation ending scale
 
-使用 `zoom-out-{amount}`设置动画结束时的缩放
+Set the ending scale of an animation using the `zoom-out-{amount}` utilities.
 
 ```html
 <button class="animate-out zoom-out ...">Button A</button>
@@ -281,15 +281,15 @@ Learn more in the [exit animation rotate](/docs/exit-animation-rotate.md) docume
 
 Learn more in the [exit animation scale](/docs/exit-animation-scale.md) documentation.
 
-#### 更改退出动画时的位移
+#### Changing exit animation ending translate
 
-使用 `slide-out-to-{direction}-{amount}` 设置动画结束时的位移
+Set the ending translate of an animation using the `slide-out-to-{direction}-{amount}` utilities.
 
 ```html
 <button class="animate-out slide-out-to-top ...">Button A</button>
-<button class="animate-out slide-out-to-bottom-48 ...">Button B</button>
-<button class="animate-out slide-out-to-left-72 ...">Button C</button>
-<button class="animate-out slide-out-to-right-96 ...">Button C</button>
+<button class="animate-out slide-out-to-bottom-50 ...">Button B</button>
+<button class="animate-out slide-out-to-left-75 ...">Button C</button>
+<button class="animate-out slide-out-to-right-95 ...">Button C</button>
 ```
 
 Learn more in the [exit animation translate](/docs/exit-animation-translate.md) documentation.
