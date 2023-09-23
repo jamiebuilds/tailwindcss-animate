@@ -10,7 +10,7 @@
 <div class="animate-out slide-out-to-top slide-out-to-left">...</div>
 
 <!-- Control animation duration -->
-<div class="... duration-300">...</div>
+<div class="... animation-duration-300">...</div>
 
 <!-- Control animation delay -->
 <div class="... delay-150">...</div>
@@ -43,26 +43,29 @@ module.exports = {
 
 ## Documentation
 
-- [Basic Usage](#basic-usage)
-  - [Changing animation delay](#changing-animation-delay)
-  - [Changing animation direction](#changing-animation-direction)
-  - [Changing animation duration](#changing-animation-duration)
-  - [Changing animation fill mode](#changing-animation-fill-mode)
-  - [Changing animation iteration count](#changing-animation-iteration-count)
-  - [Changing animation play state](#changing-animation-play-state)
-  - [Changing animation timing function](#changing-animation-timing-function)
-  - [Prefers-reduced-motion](#prefers-reduced-motion)
-- [Enter & Exit Animations](#enter-and-exit-animations)
-  - [Adding enter animations](#adding-enter-animations)
-  - [Adding exit animations](#adding-exit-animations)
-  - [Changing enter animation starting opacity](#changing-enter-animation-starting-opacity)
-  - [Changing enter animation starting rotation](#changing-enter-animation-starting-rotation)
-  - [Changing enter animation starting scale](#changing-enter-animation-starting-scale)
-  - [Changing enter animation starting translate](#changing-enter-animation-starting-translate)
-  - [Changing exit animation ending opacity](#changing-exit-animation-ending-opacity)
-  - [Changing exit animation ending rotation](#changing-exit-animation-ending-rotation)
-  - [Changing exit animation ending scale](#changing-exit-animation-ending-scale)
-  - [Changing exit animation ending translate](#changing-exit-animation-ending-translate)
+- [`tailwindcss-animate`](#tailwindcss-animate)
+  - [Installation](#installation)
+  - [Documentation](#documentation)
+    - [Basic Usage](#basic-usage)
+      - [Changing animation delay](#changing-animation-delay)
+      - [Changing animation direction](#changing-animation-direction)
+      - [Changing animation duration](#changing-animation-duration)
+      - [Changing animation fill mode](#changing-animation-fill-mode)
+      - [Changing animation iteration count](#changing-animation-iteration-count)
+      - [Changing animation play state](#changing-animation-play-state)
+      - [Changing animation timing function](#changing-animation-timing-function)
+      - [Prefers-reduced-motion](#prefers-reduced-motion)
+    - [Enter \& Exit Animations](#enter--exit-animations)
+    - [Adding enter animations](#adding-enter-animations)
+    - [Adding exit animations](#adding-exit-animations)
+      - [Changing enter animation starting opacity](#changing-enter-animation-starting-opacity)
+      - [Changing enter animation starting rotation](#changing-enter-animation-starting-rotation)
+      - [Changing enter animation starting scale](#changing-enter-animation-starting-scale)
+      - [Changing enter animation starting translate](#changing-enter-animation-starting-translate)
+      - [Changing exit animation ending opacity](#changing-exit-animation-ending-opacity)
+      - [Changing exit animation ending rotation](#changing-exit-animation-ending-rotation)
+      - [Changing exit animation ending scale](#changing-exit-animation-ending-scale)
+      - [Changing exit animation ending translate](#changing-exit-animation-ending-translate)
 
 ### Basic Usage
 
@@ -71,9 +74,15 @@ module.exports = {
 Use the `delay-{amount}` utilities to control an element’s `animation-delay`.
 
 ```html
-<button class="animate-bounce delay-150 duration-300 ...">Button A</button>
-<button class="animate-bounce delay-300 duration-300 ...">Button B</button>
-<button class="animate-bounce delay-700 duration-300 ...">Button C</button>
+<button class="animate-bounce delay-150 animation-duration-300 ...">
+	Button A
+</button>
+<button class="animate-bounce delay-300 animation-duration-300 ...">
+	Button B
+</button>
+<button class="animate-bounce delay-700 animation-duration-300 ...">
+	Button C
+</button>
 ```
 
 Learn more in the [animation delay](/docs/animation-delay.md) documentation.
@@ -93,12 +102,12 @@ Learn more in the [animation direction](/docs/animation-direction.md) documentat
 
 #### Changing animation duration
 
-Use the `duration-{amount}` utilities to control an element’s `animation-duration`.
+Use the `animation-duration-{amount}` utilities to control an element’s `animation-duration`.
 
 ```html
-<button class="animate-bounce duration-150 ...">Button A</button>
-<button class="animate-bounce duration-300 ...">Button B</button>
-<button class="animate-bounce duration-700 ...">Button C</button>
+<button class="animate-bounce animation-duration-150 ...">Button A</button>
+<button class="animate-bounce animation-duration-300 ...">Button B</button>
+<button class="animate-bounce animation-duration-700 ...">Button C</button>
 ```
 
 Learn more in the [animation duration](/docs/animation-duration.md) documentation.

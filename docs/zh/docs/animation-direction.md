@@ -29,7 +29,7 @@ Use the `direction-{keyword}` utilities to control an element’s `animation-del
 Tailwind lets you conditionally apply utility classes in different states using variant modifiers. For example, use `hover:direction-normal` to only apply the `direction-normal` utility on hover.
 
 ```html
-<div class="animate-bounce duration-300 delay-150 hover:direction-normal">
+<div class="animate-bounce animation-duration-300 delay-150 hover:direction-normal">
     <!-- ... -->
 </div>
 ```
@@ -41,7 +41,7 @@ For a complete list of all available state modifiers, check out the [Hover, Focu
 You can also use variant modifiers to target media queries like responsive breakpoints, dark mode, prefers-reduced-motion, and more. For example, use `md:direction-normal` to apply the `direction-normal` utility at only medium screen sizes and above.
 
 ```html
-<div class="animate-bounce duration-300 delay-150 md:direction-normal">
+<div class="animate-bounce animation-duration-300 delay-150 md:direction-normal">
     <!-- ... -->
 </div>
 ```
