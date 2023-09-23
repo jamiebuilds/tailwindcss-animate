@@ -86,7 +86,7 @@ module.exports = plugin(
 		)
 
 		matchUtilities(
-			{ duration: (value) => ({ animationDuration: value }) },
+			{ "animation-duration": (value) => ({ animationDuration: value }) },
 			{ values: filterDefault(theme("animationDuration")) },
 		)
 

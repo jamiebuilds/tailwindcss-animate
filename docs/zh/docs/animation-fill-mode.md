@@ -30,7 +30,7 @@ Tailwind lets you conditionally apply utility classes in different states using 
 
 ```html
 <div
-    class="animate-bounce duration-300 fill-mode-backwards hover:fill-mode-forwards"
+    class="animate-bounce animation-duration-300 fill-mode-backwards hover:fill-mode-forwards"
 >
     <!-- ... -->
 </div>
@@ -44,7 +44,7 @@ You can also use variant modifiers to target media queries like responsive break
 
 ```html
 <div
-    class="animate-bounce duration-300 fill-mode-backwards md:fill-mode-forwards"
+    class="animate-bounce animation-duration-300 fill-mode-backwards md:fill-mode-forwards"
 >
     <!-- ... -->
 </div>
