@@ -52,7 +52,7 @@ module.exports = {
   - [Changing animation play state](#changing-animation-play-state)
   - [Changing animation timing function](#changing-animation-timing-function)
   - [Prefers-reduced-motion](#prefers-reduced-motion)
-- [Enter & Exit Animations](#enter-and-exit-animations)
+- [Enter & Exit Animations](#enter--exit-animations)
   - [Adding enter animations](#adding-enter-animations)
   - [Adding exit animations](#adding-exit-animations)
   - [Changing enter animation starting opacity](#changing-enter-animation-starting-opacity)
