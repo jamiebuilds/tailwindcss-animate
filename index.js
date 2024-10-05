@@ -9,11 +9,7 @@ function filterDefault(values) {
 module.exports = plugin(
 	({ addUtilities, matchUtilities, theme }) => {
 		addUtilities({
-			"@keyframes enter": theme("keyframes.enter"),
-			"@keyframes exit": theme("keyframes.exit"),
 			".animate-in": {
-				animationName: "enter",
-				animationDuration: theme("animationDuration.DEFAULT"),
 				"--tw-enter-opacity": "initial",
 				"--tw-enter-scale": "initial",
 				"--tw-enter-rotate": "initial",
@@ -21,8 +17,6 @@ module.exports = plugin(
 				"--tw-enter-translate-y": "initial",
 			},
 			".animate-out": {
-				animationName: "exit",
-				animationDuration: theme("animationDuration.DEFAULT"),
 				"--tw-exit-opacity": "initial",
 				"--tw-exit-scale": "initial",
 				"--tw-exit-rotate": "initial",
@@ -166,6 +160,10 @@ module.exports = plugin(
 					1: "1",
 					infinite: "infinite",
 				},
+				animation: ({ theme }) => ({
+					out: `leave ${theme("animationDuration.DEFAULT")}`,
+					in: `enter ${theme("animationDuration.DEFAULT")}`,
+				}),
 				keyframes: {
 					enter: {
 						from: {
