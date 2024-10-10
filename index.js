@@ -58,25 +58,25 @@ module.exports = plugin(
 		matchUtilities(
 			{
 				"slide-in-from-top": (value) => ({
-					"--tw-enter-translate-y": `-${value}`,
+					"--tw-enter-translate-y": `calc(-1 * ${value})`,
 				}),
 				"slide-in-from-bottom": (value) => ({
 					"--tw-enter-translate-y": value,
 				}),
 				"slide-in-from-left": (value) => ({
-					"--tw-enter-translate-x": `-${value}`,
+					"--tw-enter-translate-x": `calc(-1 * ${value})`,
 				}),
 				"slide-in-from-right": (value) => ({
 					"--tw-enter-translate-x": value,
 				}),
 				"slide-out-to-top": (value) => ({
-					"--tw-exit-translate-y": `-${value}`,
+					"--tw-exit-translate-y": `calc(-1 * ${value})`,
 				}),
 				"slide-out-to-bottom": (value) => ({
 					"--tw-exit-translate-y": value,
 				}),
 				"slide-out-to-left": (value) => ({
-					"--tw-exit-translate-x": `-${value}`,
+					"--tw-exit-translate-x": `calc(-1 * ${value})`,
 				}),
 				"slide-out-to-right": (value) => ({
 					"--tw-exit-translate-x": value,
