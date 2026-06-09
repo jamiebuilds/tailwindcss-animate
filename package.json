@@ -35,6 +35,14 @@
 	],
 	"author": "Jamie Kyle <me@thejameskyle.com>",
 	"license": "MIT",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/jamiebuilds/tailwindcss-animate.git"
+	},
+	"bugs": {
+		"url": "https://github.com/jamiebuilds/tailwindcss-animate/issues"
+	},
+	"homepage": "https://github.com/jamiebuilds/tailwindcss-animate#readme",
 	"peerDependencies": {
 		"tailwindcss": ">=3.0.0 || insiders"
 	},
